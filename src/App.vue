@@ -1,9 +1,9 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <header>
-        <h4 class="display-4">Dummy Users App</h4>
-      </header>
+      <div class="col-12">
+        <h4 class="page-title display-4">Dummy Users App</h4>
+      </div>
     </div>
     <div class="row main-row">
       <UserForm :col="userFormCol" @user-created="updateUserList"/>
