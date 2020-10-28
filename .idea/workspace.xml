@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4c7173c-8d2b-4a8a-af5a-dfaa0887d032" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="js.ns.project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -49,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603839548666</updated>
       <workItem from="1603839550101" duration="5615000" />
+      <workItem from="1603893006599" duration="13760000" />
     </task>
     <servers />
   </component>

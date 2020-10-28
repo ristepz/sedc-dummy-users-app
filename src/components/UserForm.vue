@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6">
+  <div :class="`col-${col}`">
     <div class="pad">
       <div class="form-group">
         <input type="text" class="form-control" v-model="user.FirstName" placeholder="First Name">
@@ -49,6 +49,12 @@ export default {
       }
     };
   },
+  props:{
+    col: {
+      type: Number,
+      default: 3
+    }
+  },
   methods:{
     setAvatarImage(index){
       this.selectedAvatar = index;
@@ -66,6 +72,17 @@ export default {
         parsedUsers.push(this.user);
         localStorage.setItem('users', JSON.stringify(parsedUsers));
       }
+      this.$emit('user-created', parsedUsers);
+      this.user = {
+        ID: 0,
+        FirstName: '',
+        LastName: '',
+        Email: '',
+        City: '',
+        Age: '',
+        Avatar: ''
+      };
+      this.selectedAvatar = -1;
     }
   }
 }

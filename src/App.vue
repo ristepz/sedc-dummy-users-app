@@ -6,9 +6,9 @@
       </div>
     </div>
     <div class="row main-row">
-      <UserForm />
-      <UserList />
-      <UserCard />
+      <UserForm :col="userFormCol" @user-created="updateUserList" />
+      <UserList :col="userListCol" :user-list="userList" @set-details="setDetails" />
+      <UserCard :user-details="userDetails" @close-details="closeDetails" />
     </div>
   </div>
 </template>
@@ -20,6 +20,35 @@ import UserCard from "./components/UserCard.vue";
 
 export default {
   name: 'App',
+  data(){
+    return {
+      userList: [],
+      userDetails: null,
+      userFormCol: 6,
+      userListCol: 6,
+    };
+  },
+  created(){
+    const users = localStorage.getItem('users');
+    if(users){
+      this.userList = JSON.parse(users);
+    }
+  },
+  methods:{
+    updateUserList(list){
+      this.userList = list;
+    },
+    setDetails(user){
+      this.userDetails = user;
+      this.userFormCol = 5;
+      this.userListCol = 4;
+    },
+    closeDetails(){
+      this.userDetails = null;
+      this.userFormCol = 6;
+      this.userListCol = 6;
+    }
+  },
   components:{
     UserForm,
     UserList,
